@@ -25,7 +25,9 @@ const NavBar = () => {
       <div className="nav-center">
         <div className="nav-header">
           <Link href="/">
-            <Image className="logo" src="/logo.svg" width={150} height={30} />
+            <a>
+              <Image className="logo" src="/logo.svg" width={150} height={30} />
+            </a>
           </Link>
           <button
             className="nav-toggle"
@@ -39,7 +41,14 @@ const NavBar = () => {
             className={`${showLinks && 'show-sidebar-header'} sidebar-header`}
           >
             <Link href="/">
-              <Image className="logo" src="/logo.svg" width={150} height={30} />
+              <a>
+                <Image
+                  className="logo"
+                  src="/logo.svg"
+                  width={150}
+                  height={30}
+                />
+              </a>
             </Link>
             <FaTimes
               className="close-btn"
