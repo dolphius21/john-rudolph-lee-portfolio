@@ -8,6 +8,8 @@ Variables
 :root {
   --clr-main-1: #1b1b32;
   --clr-main-2: #3b3b4f;
+  --clr-main-3: #5c5c83;
+  --clr-main-4: #7d7db4;
   --clr-white: #fff;
   --clr-grey-1: #7b84b1;
   --clr-grey-2: #a4aac7;
@@ -114,15 +116,24 @@ a {
   display: inline-block;
   position: relative;
   text-align: center;
-  font-size: 1.25rem;
+  font-size: 1rem;
   min-height: 50px;
   padding: 0.5rem 1rem;
+  margin-bottom: 2rem;
   font-family: var(--font-main-1);
   display: flex;
   align-items: center;
-  box-shadow: inset -4px -4px 0px 0px var(--clr-grey-1);
+  box-shadow: inset -3px -3px 0px 0px var(--clr-grey-1);
   border: none;
   cursor: pointer;
+}
+.btn:hover {
+  background: var(--clr-main-4);
+  box-shadow: inset -4px -4px 0px 0px var(--clr-main-3);
+}
+.btn:active {
+  background: var(--clr-main-4);
+  box-shadow: inset 4px 4px 0px 0px var(--clr-main-3);
 }
 .btn:before,
 .btn:after {
@@ -144,6 +155,34 @@ a {
   border-left: 4px black solid;
   border-right: 4px black solid;
 }
+@media screen and (min-width: 800px) {
+  .btn {
+    font-size: 1.25rem;
+    margin-bottom: none;
+    box-shadow: inset -4px -4px 0px 0px var(--clr-grey-1);
+  }
+  .btn:hover {
+    box-shadow: inset -6px -6px 0px 0px var(--clr-main-3);
+  }
+  .btn:active {
+    box-shadow: inset 4px 4px 0px 0px var(--clr-main-3);
+  }
+  .btn:before {
+    top: -5px;
+    border-top: 5px black solid;
+    border-bottom: 5px black solid;
+  }
+  .btn:after {
+    left: -5px;
+    border-left: 5px black solid;
+    border-right: 5px black solid;
+  }
+}
+.heading {
+  font-family: var(--font-main-1);
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+}
 /*
 =============== 
 Navbar
@@ -156,6 +195,7 @@ Navbar
 }
 .logo {
   cursor: pointer;
+  outline: none;
 }
 .nav-toggle {
   font-size: 1.5rem;
@@ -275,9 +315,9 @@ Banner
 ===============
 */
 .banner {
+  padding: 1rem 1rem 0;
   height: 100%;
   font-family: var(--font-main-1);
-  min-height: calc(100vh - 44px);
   text-align: center;
   display: grid;
   color: var(--clr-main-1);
@@ -293,15 +333,86 @@ Banner
   margin: 0 auto 2rem;
 }
 .banner .heading-1 {
-  font-size: 2.75rem;
+  font-size: 1.75rem;
+  margin: 0 auto 2rem;
 }
 .banner .heading-2 {
-  font-size: 1.25rem;
+  font-size: 1rem;
+  display: none;
 }
 .btn-container {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
   max-width: 600px;
   margin: auto;
+}
+@media screen and (min-width: 800px) {
+  .banner {
+    text-align: center;
+  }
+  .banner-text {
+    margin-top: 3rem;
+  }
+  .banner .heading-1 {
+    font-size: 2.75rem;
+    margin: 0 auto 3rem;
+  }
+  .banner .heading-1 {
+    font-size: 2.75rem;
+    margin: 0 auto 3rem;
+  }
+  .banner .heading-2 {
+    font-size: 1.5rem;
+    display: block;
+  }
+  .btn-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 600px;
+    margin: auto;
+  }
+}
+/*
+=============== 
+About
+===============
+*/
+.about {
+  background: #1b1b32;
+  padding: 4rem 1rem 3rem;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.about .heading {
+  color: var(--clr-white);
+}
+.about p {
+  line-height: 1.75;
+  margin-bottom: 3rem;
+}
+.about .flex {
+  display: flex;
+  flex-direction: column;
+}
+.about h4 {
+  font-family: var(--font-main-1);
+  font-size: 1.25rem;
+  color: var(--clr-white);
+  margin: 2rem 0;
+}
+.about .col p {
+  max-width: 500px;
+  margin: 0 auto 3rem;
+}
+@media screen and (min-width: 1100px) {
+  .about .flex {
+    flex-direction: row;
+  }
+  .about .col {
+    margin: 0 1rem;
+  }
 }

@@ -7,11 +7,11 @@ const Banner = () => {
       <div className="banner-text">
         <h2 className="heading-2">Hello, I'm John Rudolph Lee</h2>
         <h1 className="heading-1">
-          A Front-End Web Developer & Digital Designer
+          Front-End Web Developer & Digital Designer
         </h1>
         <div className="btn-container">
           <button className="btn">Download CV</button>
-          <Link href="/register">
+          <Link href="#contact">
             <a className="btn">Contact Me</a>
           </Link>
         </div>

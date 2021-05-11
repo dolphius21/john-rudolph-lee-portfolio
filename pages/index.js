@@ -1,3 +1,4 @@
+import About from '../components/about';
 import Banner from '../components/banner';
 import HeadComp from '../components/head';
 import Navbar from '../components/navbar';
@@ -9,6 +10,7 @@ export default function Home() {
       <HeadComp />
       <Navbar />
       <Banner />
+      <About />
     </div>
   );
 }
