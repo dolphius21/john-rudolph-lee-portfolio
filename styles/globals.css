@@ -385,8 +385,13 @@ Banner
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    max-width: 600px;
+    max-width: 470px;
     margin: auto;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .btn-container {
+    max-width: 600px;
   }
 }
 /*
@@ -482,25 +487,51 @@ Projects
     min-width: 350px;
   }
 }
-
-/* .btn {
-  font-size: 1.25rem;
-  margin-bottom: none;
-  box-shadow: inset -4px -4px 0px 0px var(--clr-grey-1);
+/*
+===========================  
+Softwares & Technologies
+=========================== 
+*/
+.softwares {
+  padding: 7rem 1rem 7rem;
+  font-family: var(--font-main-1);
 }
-.btn:hover {
-  box-shadow: inset -6px -6px 0px 0px var(--clr-main-3);
+.softwares .heading {
+  color: var(--clr-main-1);
+  margin-bottom: 5rem;
 }
-.btn:active {
-  box-shadow: inset 4px 4px 0px 0px var(--clr-main-3);
+.software-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-.btn:before {
-  top: -5px;
-  border-top: 5px black solid;
-  border-bottom: 5px black solid;
+.software {
+  display: inline-block;
+  position: relative;
+  flex-basis: auto;
+  padding: 1rem 2rem;
+  color: var(--clr-main-1);
+  margin: 1rem;
+  background: var(--clr-grey-2);
+  box-shadow: inset -3px -3px 0px 0px var(--clr-grey-1);
 }
-.btn:after {
-  left: -5px;
-  border-left: 5px black solid;
-  border-right: 5px black solid;
-} */
+.software:before,
+.software:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-sizing: content-box;
+}
+.software:before {
+  top: -4px;
+  left: 0;
+  border-top: 4px var(--clr-main-1) solid;
+  border-bottom: 4px var(--clr-main-1) solid;
+}
+.software:after {
+  left: -4px;
+  top: 0;
+  border-left: 4px var(--clr-main-1) solid;
+  border-right: 4px var(--clr-main-1) solid;
+}

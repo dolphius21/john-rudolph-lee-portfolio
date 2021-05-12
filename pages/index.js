@@ -3,6 +3,7 @@ import Banner from '../components/banner';
 import HeadComp from '../components/head';
 import Navbar from '../components/navbar';
 import Projects from '../components/projects';
+import Sofwares from '../components/softwares';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
       <Banner />
       <About />
       <Projects />
+      <Sofwares />
     </div>
   );
 }
