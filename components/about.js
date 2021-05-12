@@ -4,7 +4,7 @@ const About = () => {
   return (
     <section className="about">
       <div className="container">
-        <div className="heading">About Me</div>
+        <h2 className="heading">About Me</h2>
         <p>
           Hi, you can call me Rudolph, My 7 years of experience as a Graphic
           Designer has afforded me a well-rounded skillset, including concept
