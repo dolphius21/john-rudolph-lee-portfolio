@@ -3,7 +3,10 @@ const Form = () => {
     <div className="form-container">
       <h4>Reach out to me</h4>
       <p>It's my pleasure to help you with your projects.</p>
-      <form action="bdb188982122079af6be107f660c9c67" method="POST">
+      <form
+        action="https://formsubmit.co/johnrudolphlee@gmail.com"
+        method="POST"
+      >
         <div className="form-group">
           <input
             type="text"
