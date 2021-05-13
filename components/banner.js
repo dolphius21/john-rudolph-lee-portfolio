@@ -10,10 +10,12 @@ const Banner = () => {
           Front-End Web Developer & Digital Designer
         </h1>
         <div className="btn-container">
-          <button className="btn">Download CV</button>
-          <Link href="#contact">
-            <a className="btn">Contact Me</a>
-          </Link>
+          <a className="btn" href="/johnrudolphlee-cv.pdf" download>
+            Download CV
+          </a>
+          <a className="btn" href="#contact">
+            Contact Me
+          </a>
         </div>
       </div>
       <Image

@@ -26,13 +26,14 @@ Variables
   --max-width: 1400px;
   --fixed-width: 620px;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-
 body {
   font-family: var(--font-main-3);
   background: var(--clr-white);
@@ -41,14 +42,12 @@ body {
   line-height: 1.5;
   font-size: 0.875rem;
 }
-
 ul {
   list-style-type: none;
 }
 a {
   text-decoration: none;
 }
-
 h1,
 h2,
 h3,
@@ -119,7 +118,8 @@ a {
   display: flex;
   flex-direction: column;
 }
-.btn {
+.btn,
+.form-btn {
   background: var(--clr-grey-2);
   color: var(--clr-main-1);
   display: inline-block;
@@ -136,16 +136,20 @@ a {
   border: none;
   cursor: pointer;
 }
-.btn:hover {
+.btn:hover,
+.form-btn:hover {
   background: var(--clr-main-4);
   box-shadow: inset -4px -4px 0px 0px var(--clr-main-3);
 }
-.btn:active {
+.btn:active,
+.form-btn:active {
   background: var(--clr-main-4);
   box-shadow: inset 4px 4px 0px 0px var(--clr-main-3);
 }
 .btn:before,
-.btn:after {
+.btn:after,
+.form-btn:before,
+.form-btn:after {
   content: '';
   position: absolute;
   width: 100%;
@@ -161,8 +165,8 @@ a {
 .btn:after {
   left: -4px;
   top: 0;
-  border-left: 4px var(--clr-main-1) solid;
-  border-right: 4px var(--clr-main-1) solid;
+  border-left: 4px var(--clr-main-2) solid;
+  border-right: 4px var(--clr-main-2) solid;
 }
 @media screen and (min-width: 1000px) {
   .flex {
@@ -534,4 +538,82 @@ Softwares & Technologies
   top: 0;
   border-left: 4px var(--clr-main-1) solid;
   border-right: 4px var(--clr-main-1) solid;
+}
+/*
+=============== 
+Contact
+===============
+*/
+.contact {
+  background: var(--clr-main-1);
+  padding: 5rem 1rem 1rem;
+}
+/* .flex {
+  display: flex;
+  justify-content: space-between;
+} */
+.contact h4 {
+  font-family: var(--font-main-1);
+  font-size: 1.25rem;
+  color: var(--clr-white);
+  margin-bottom: 2rem;
+}
+.social-container {
+  margin-right: 7rem;
+  margin-bottom: 2rem;
+}
+.social-list {
+  margin-bottom: 2rem;
+}
+.social-item a {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+.social-text {
+  display: block;
+  margin-bottom: 0;
+  margin-left: 1rem;
+}
+.form-container {
+  flex: 1;
+}
+.form-container p {
+  font-size: 1.2rem;
+}
+.form-container form {
+  width: 100%;
+}
+.form-group {
+  margin-bottom: 1.5rem;
+}
+.form-group label,
+.form-group input,
+.form-group textarea {
+  display: block;
+  width: 100%;
+  font-size: 1.25rem;
+  font-family: var(--font-main-3);
+  padding: 0.5rem;
+}
+.form-btn {
+  margin-left: auto;
+}
+/*
+=============== 
+Footer
+===============
+*/
+footer {
+  background: var(--clr-main-4);
+  padding: 1.25rem 0 0.25rem;
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 1rem;
+}
+@media screen and (min-width: 800px) {
+  footer {
+    font-size: 1.25rem;
+  }
 }

@@ -56,12 +56,8 @@ const NavBar = () => {
             />
           </div>
           <nav className="links">
-            <Link href="#projects">
-              <a>Projects</a>
-            </Link>
-            <Link href="#contact">
-              <a>Contact</a>
-            </Link>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
           </nav>
         </div>
       </div>
