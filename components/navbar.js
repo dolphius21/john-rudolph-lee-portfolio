@@ -26,7 +26,7 @@ const NavBar = () => {
         <div className="nav-header">
           <Link href="/">
             <a>
-              <Image className="logo" src="/logo.svg" width={150} height={30} />
+              <Image className="logo" src="/logo.svg" width={150} height={35} />
             </a>
           </Link>
           <button
