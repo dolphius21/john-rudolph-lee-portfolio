@@ -15,12 +15,14 @@ const About = () => {
         </p>
         <div className="flex">
           <div className="col">
-            <Image
-              src="/web-development-icon.svg"
-              height={120}
-              width={120}
-              className="about-icon"
-            />
+            <div className="animation-container">
+              <Image
+                src="/web-development-icon.svg"
+                height={120}
+                width={120}
+                className="about-icon"
+              />
+            </div>
             <h4>Web Developement</h4>
             <p>
               Uses HTML, CSS, Javascript, MERN(MongoDB, Express.JS, React.JS,
@@ -28,12 +30,14 @@ const About = () => {
             </p>
           </div>
           <div className="col">
-            <Image
-              src="/graphic-design-icon.svg"
-              height={120}
-              width={120}
-              className="about-icon"
-            />
+            <div className="animation-container">
+              <Image
+                src="/graphic-design-icon.svg"
+                height={120}
+                width={120}
+                className="about-icon"
+              />
+            </div>
             <h4>Graphic Design</h4>
             <p>
               I'm an expert when it comes to creating and illustrating
@@ -41,12 +45,14 @@ const About = () => {
             </p>
           </div>
           <div className="col">
-            <Image
-              src="/motion-graphics-icon.svg"
-              height={120}
-              width={120}
-              className="about-icon"
-            />
+            <div className="animation-container">
+              <Image
+                src="/motion-graphics-icon.svg"
+                height={120}
+                width={120}
+                className="about-icon"
+              />
+            </div>
             <h4>Motion Graphic</h4>
             <p>
               Animates vector-based graphics that can be used in your marketing

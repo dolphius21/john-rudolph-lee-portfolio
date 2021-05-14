@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto+Mono:wght@400;500&family=VT323&display=swap');
+@import 'animations.css';
 
 /*
 =============== 
@@ -117,6 +118,9 @@ a {
 .flex {
   display: flex;
   flex-direction: column;
+}
+.animation-container:hover {
+  animation: hvr-buzz-out 3s forwards;
 }
 .btn,
 .form-btn {
