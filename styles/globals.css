@@ -119,9 +119,6 @@ a {
   display: flex;
   flex-direction: column;
 }
-.animation-container:hover {
-  animation: hvr-buzz-out 3s forwards;
-}
 .btn,
 .form-btn {
   background: var(--clr-grey-2);

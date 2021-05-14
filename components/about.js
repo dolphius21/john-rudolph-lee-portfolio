@@ -15,7 +15,7 @@ const About = () => {
         </p>
         <div className="flex">
           <div className="col">
-            <div className="animation-container">
+            <div className="hvr-bounce-in">
               <Image
                 src="/web-development-icon.svg"
                 height={120}
@@ -30,7 +30,7 @@ const About = () => {
             </p>
           </div>
           <div className="col">
-            <div className="animation-container">
+            <div className="hvr-bounce-in">
               <Image
                 src="/graphic-design-icon.svg"
                 height={120}
@@ -45,7 +45,7 @@ const About = () => {
             </p>
           </div>
           <div className="col">
-            <div className="animation-container">
+            <div className="hvr-bounce-in">
               <Image
                 src="/motion-graphics-icon.svg"
                 height={120}
