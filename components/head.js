@@ -6,16 +6,13 @@ const HeadComp = () => {
       <title>John Rudolph Lee</title>
       <meta
         key="title-meta"
-        name="John Rudolph Lee | Digital Designer & Front-End Web Developer"
+        name="John Rudolph Lee | Front-End Web Developer & Digital Designer"
         content="initial-scale=1.0, width=device-width"
       />
-      <meta
-        property="og:url"
-        content="https://john-rudolph-lee-portfolio.vercel.app/"
-      />
+      <meta property="og:url" content="https://www.johnrudol.ph/" />
       <meta
         property="og:title"
-        content="John Rudolph Lee | Digital Designer & Front-End Web Developer"
+        content="John Rudolph Lee | Front-End Web Developer & Digital Designer"
       />
       <meta property="og:type" content="personal website" />
       <meta
