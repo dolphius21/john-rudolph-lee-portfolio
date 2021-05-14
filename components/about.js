@@ -6,7 +6,7 @@ const About = () => {
       <div className="container">
         <h2 className="heading">About Me</h2>
         <p>
-          Hi, you can call me Rudolph, My 7 years of experience as a Graphic
+          Hi, you can call me Rudolph, My 8 years of experience as a Graphic
           Designer has afforded me a well-rounded skillset, including concept
           design, project management and communication abilities. I am also
           learning new skills like web development and just recently completed a
