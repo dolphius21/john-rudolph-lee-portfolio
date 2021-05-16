@@ -669,6 +669,7 @@ Modal
   height: 100%;
   background-color: hsla(233, 62%, 10%, 0.5);
   z-index: 2;
+  padding: 0 1rem;
 }
 .modal-container {
   position: relative;
