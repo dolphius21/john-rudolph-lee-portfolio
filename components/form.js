@@ -27,7 +27,7 @@ const Form = ({ setShowModal, setModal }) => {
   const onSubmit = async (data) => {
     const config = {
       method: 'post',
-      url: `${process.env.end_point}/api/contact`,
+      url: `${process.env.NEXT_PUBLIC_END_POINT}/api/contact`,
       headers: {
         'Content-Type': 'application/json'
       },
