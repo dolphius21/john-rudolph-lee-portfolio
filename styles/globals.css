@@ -273,6 +273,9 @@ Navbar
 .sidebar-header {
   display: none;
 }
+.sidebar-header a {
+  padding-top: 7px;
+}
 .show-sidebar-header {
   display: flex;
   justify-content: space-between;
