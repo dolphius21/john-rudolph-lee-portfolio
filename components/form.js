@@ -1,10 +1,51 @@
 import { useForm } from 'react-hook-form';
+import { yupResolver } from '@hookform/resolvers/yup';
+import * as yup from 'yup';
+import axios from 'axios';
 
-const Form = () => {
-  const { register, handleSubmit, errors, reset } = useForm();
+const schema = yup.object().shape({
+  name: yup.string().required(),
+  email: yup.string().email().required(),
+  message: yup.string().min(10).required()
+});
 
-  const onSubmitForm = (values) => {
-    console.log(values);
+const Form = ({ setShowModal, setModal }) => {
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors }
+  } = useForm({
+    resolver: yupResolver(schema),
+    defaultValues: {
+      name: '',
+      email: '',
+      message: ''
+    }
+  });
+
+  const onSubmit = async (data) => {
+    const config = {
+      method: 'post',
+      url: `${process.env.end_point}/api/contact`,
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      data
+    };
+
+    try {
+      const response = await axios(config);
+      if (response.status === 200) {
+        setModal('Success');
+        setShowModal(true);
+        reset();
+      }
+    } catch (err) {
+      setModal('Error');
+      setShowModal(true);
+      console.error('error:', err);
+    }
   };
   return (
     <div className="form-container">
@@ -13,24 +54,26 @@ const Form = () => {
         I'm available for work or projects. You can contact me using the form
         below, or by emailing me at johnrudolphlee@gmail.com
       </p>
-      <form
-        action="https://formsubmit.co/johnrudolphlee@gmail.com"
-        method="POST"
-      >
+      <form onSubmit={handleSubmit(onSubmit)}>
         <div className="form-group">
-          <input type="text" name="name" placeholder="Name..." required />
+          <label htmlFor="name">Name:</label>
+          <input {...register('name')} type="text" name="name" />
+          <span className="error-message">{errors.name?.message}</span>
         </div>
         <div className="form-group">
-          <input type="text" name="email" placeholder="Email..." required />
+          <label htmlFor="email">Email:</label>
+          <input {...register('email')} type="text" name="email" />
+          <span className="error-message">{errors.email?.message}</span>
         </div>
         <div className="form-group">
+          <label htmlFor="message">Message:</label>
           <textarea
+            {...register('message')}
             type="text"
             name="message"
             rows={4}
-            placeholder="Message..."
-            required
           />
+          <span className="error-message">{errors.message?.message}</span>
         </div>
         <button className="form-btn" type="submit">
           Submit

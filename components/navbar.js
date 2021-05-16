@@ -36,7 +36,7 @@ const NavBar = () => {
             <FaBars />
           </button>
         </div>
-        <div className={`${showLinks && 'show-container'} links-container`}>
+        <div className={`${showLinks && 'show-sidebar'} links-container`}>
           <div
             className={`${showLinks && 'show-sidebar-header'} sidebar-header`}
           >
