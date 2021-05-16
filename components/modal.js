@@ -7,7 +7,7 @@ const Modal = ({ setShowModal, modal }) => {
   return (
     <div className="modal-overlay">
       <div className="modal-container">
-        <button type="button" className="close-btn" onClick={handleClose}>
+        <button type="button" className="modal-close-btn" onClick={handleClose}>
           <FaTimes />
         </button>
         <h2
