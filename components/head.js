@@ -4,11 +4,7 @@ const HeadComp = () => {
   return (
     <Head>
       <title>John Rudolph Lee</title>
-      <meta
-        key="title-meta"
-        name="John Rudolph Lee | Front-End Web Developer & Digital Designer"
-        content="initial-scale=1.0, width=device-width"
-      />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta property="og:url" content="https://www.johnrudol.ph/" />
       <meta
         property="og:title"

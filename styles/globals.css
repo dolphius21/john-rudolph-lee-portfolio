@@ -559,10 +559,6 @@ Contact
   background: var(--clr-main-1);
   padding: 5rem 1rem 1rem;
 }
-/* .flex {
-  display: flex;
-  justify-content: space-between;
-} */
 .contact h4 {
   font-family: var(--font-main-1);
   font-size: 1.25rem;
