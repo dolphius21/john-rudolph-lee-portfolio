@@ -1,7 +1,6 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import nodemailer from 'nodemailer';
 import { google } from 'googleapis';
-import cors from 'cors';
 
 const oAuth2Client = new google.auth.OAuth2(
   process.env.client_id,

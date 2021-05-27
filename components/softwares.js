@@ -17,6 +17,9 @@ const Sofwares = () => {
             <li className="software">Next.JS</li>
           </div>
           <div className="hvr-float">
+            <li className="software">Material UI</li>
+          </div>
+          <div className="hvr-float">
             <li className="software">Node.JS</li>
           </div>
           <div className="hvr-float">
