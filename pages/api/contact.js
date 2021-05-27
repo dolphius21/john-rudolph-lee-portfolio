@@ -37,7 +37,13 @@ export default async (req, res) => {
       <p><strong>Message: </strong>${message}</p>`
     };
 
-    await transporter.sendMail(mailOptions);
+    await transporter.sendMail(mailOptions, function (error, info) {
+      if (error) {
+        console.log('sendmail' + error);
+      } else {
+        console.log('Email sent: ' + info.response);
+      }
+    });
   } catch (err) {
     console.log(err);
   }
