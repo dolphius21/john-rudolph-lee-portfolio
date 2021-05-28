@@ -588,10 +588,6 @@ Contact
   margin-bottom: 2rem;
 }
 .social-container {
-  margin-right: 7rem;
-  margin-bottom: 2rem;
-}
-.social-list {
   margin-bottom: 2rem;
 }
 .social-item a {
@@ -599,7 +595,7 @@ Contact
   align-items: center;
   margin-bottom: 2rem;
   font-size: 1.5rem;
-  margin-right: 5rem;
+  margin-right: 3rem;
 }
 .icon-container {
   min-width: 50px;
@@ -610,6 +606,9 @@ Contact
   margin-left: 1rem;
 }
 @media screen and (min-width: 900px) {
+  .social-container {
+    margin-bottom: 0;
+  }
   .social-list {
     display: flex;
   }
