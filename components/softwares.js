@@ -40,6 +40,12 @@ const Sofwares = () => {
           <div className="hvr-float">
             <li className="software">Adobe AfterEffects</li>
           </div>
+          <div className="hvr-float">
+            <li className="software">Adobe XD</li>
+          </div>
+          <div className="hvr-float">
+            <li className="software">Figma</li>
+          </div>
         </ul>
       </div>
     </section>
